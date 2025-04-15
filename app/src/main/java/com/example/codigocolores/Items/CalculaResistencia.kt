@@ -35,6 +35,8 @@ fun CalculaResistenciaScreen() {
     val band3Color = resistorCalculator.getColorsForMultiplierBand()[band3Index]
     val band4Color = resistorCalculator.getColorsForToleranceBand()[band4Index]
 
+
+
     val resistance = resistorCalculator.calculateResistance(
         band1Color.value ?: 0,
         band2Color.value ?: 0,
@@ -50,7 +52,7 @@ fun CalculaResistenciaScreen() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            text = "Calculadora de Resistencias",
+            text = "🔌Calculadora de Resistencias 🔎",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(bottom = 24.dp)
@@ -143,4 +145,5 @@ fun CalculaResistenciaScreen() {
             )
         }
     }
+
 }
